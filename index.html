@@ -77,7 +77,7 @@
                     class="flex items-center gap-2 text-white text-sm font-medium transition-colors phone-link">
                     <i data-lucide="phone" class="w-4 h-4 text-cyan"></i> (949) 996-5355
                 </a>
-                <a href="#contact"
+                <a href="#form"
                     class="px-5 py-2.5 bg-cyan text-navy rounded-full text-sm font-semibold hover:bg-cyan-hover hover:shadow-glow transition-all">Book
                     Consultation</a>
             </div>
@@ -93,8 +93,7 @@
     <!-- MOBILE NAV -->
     <div id="mobileNav"
         class="fixed inset-0 bg-navy/95 backdrop-blur-xl z-[55] flex flex-col items-center justify-center gap-8 opacity-0 pointer-events-none transition-all duration-300">
-        <button id="mobileClose"
-            class="absolute top-6 right-6 text-white p-2 hover:text-cyan transition-colors z-[60]">
+        <button id="mobileClose" class="absolute top-6 right-6 text-white p-2 hover:text-cyan transition-colors z-[60]">
             <i data-lucide="x" class="w-8 h-8"></i>
         </button>
         <a href="#about" class="text-white text-2xl font-heading font-semibold hover:text-cyan mobile-link">What is
@@ -106,7 +105,7 @@
         <a href="#candidacy"
             class="text-white text-2xl font-heading font-semibold hover:text-cyan mobile-link">Candidacy</a>
         <a href="#faq" class="text-white text-2xl font-heading font-semibold hover:text-cyan mobile-link">FAQ</a>
-        <a href="#contact" class="px-8 py-3 mt-4 bg-cyan text-navy rounded-full font-bold text-lg mobile-link">Book
+        <a href="#form" class="px-8 py-3 mt-4 bg-cyan text-navy rounded-full font-bold text-lg mobile-link">Book
             Consultation</a>
     </div>
 
@@ -162,7 +161,7 @@
                 </div>
 
                 <!-- Right: Form -->
-                <div class="lg:col-span-5 animate-fade-in-up" style="animation-delay: 0.6s;">
+                <div id="form" class="lg:col-span-5 animate-fade-in-up" style="animation-delay: 0.6s;">
                     <div class="glass-form p-8 rounded-3xl relative overflow-hidden">
                         <div class="absolute top-0 left-0 w-full h-1 bg-cyan"></div>
                         <h3 class="text-2xl font-heading font-bold text-white mb-2">Check Your Candidacy</h3>
@@ -643,17 +642,11 @@
                 You don't have to put your life on hold to feel better. Discover if Proliv™Rx at-home brain
                 neuromodulation is the right path to your recovery.
             </p>
-            <a href="tel:+19499965355"
+            <a href="#form"
                 class="inline-flex items-center gap-3 px-10 py-5 bg-navy text-white rounded-full font-heading font-bold text-lg hover:bg-navy/90 hover:-translate-y-1 transition-all shadow-lg">
                 Schedule Your Consultation <i data-lucide="arrow-up-right" class="w-5 h-5"></i>
             </a>
         </div>
-
-        <!-- Floating CTA Button -->
-        <a href="tel:+19499965355"
-            class="fixed bottom-8 right-8 w-16 h-16 bg-navy rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-all z-50 group">
-            <i data-lucide="calendar" class="w-7 h-7 text-white group-hover:scale-110 transition-transform"></i>
-        </a>
     </section>
 
     <footer class="bg-[#0b2035] pt-16 pb-8 relative border-t border-white/5">
