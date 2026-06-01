@@ -1,0 +1,240 @@
+<footer class="bg-[#0B2035] text-gray-400 pt-16 pb-12 relative overflow-hidden">
+ <!-- Background Decoration -->
+ <div class="absolute inset-0 z-0 opacity-[0.03] pointer-events-none" style="background-image: radial-gradient(white 1.5px, transparent 1.5px); background-size: 30px 30px;">
+ </div>
+ <div class="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-white/10 to-transparent">
+ </div>
+ <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-12 mb-20">
+   <!-- Brand Column -->
+   <div class="lg:col-span-2">
+    <a class="block mb-2" href="/">
+     <img alt="Resiliency Mind+Body Medicine┬«" class="h-24 w-auto object-contain brightness-0 invert" src="/assets/images/logo/resiliency-new-logo.png"/>
+    </a>
+    <p class="font-light leading-relaxed mb-8 max-w-sm text-gray-400 text-sm">
+     Resiliency Mind + Body Medicine┬« is a boutique clinical practice specializing in advanced neuro-psychiatric treatments and integrative wellness.
+    </p>
+    <div class="flex gap-4">
+     <a aria-label="Facebook" class="w-10 h-10 rounded-lg bg-white/5 flex items-center justify-center hover:bg-secondary hover:text-white transition-all duration-300 border border-white/10" href="https://www.facebook.com/resiliencymbmedicine" rel="noopener" target="_blank">
+      <svg class="w-5 h-5" fill="currentColor" viewbox="0 0 24 24">
+       <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z">
+       </path>
+      </svg>
+     </a>
+     <a aria-label="Instagram" class="w-10 h-10 rounded-lg bg-white/5 flex items-center justify-center hover:bg-secondary hover:text-white transition-all duration-300 border border-white/10" href="https://www.instagram.com/resiliencymbmedicine" rel="noopener" target="_blank">
+      <svg class="w-5 h-5" fill="currentColor" viewbox="0 0 24 24">
+       <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z">
+       </path>
+      </svg>
+     </a>
+     <a aria-label="LinkedIn" class="w-10 h-10 rounded-lg bg-white/5 flex items-center justify-center hover:bg-secondary hover:text-white transition-all duration-300 border border-white/10" href="https://www.linkedin.com/company/resiliencymbmedicine" rel="noopener" target="_blank">
+      <svg class="w-5 h-5" fill="currentColor" viewbox="0 0 24 24">
+       <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z">
+       </path>
+      </svg>
+     </a>
+     <a aria-label="TikTok" class="w-10 h-10 rounded-lg bg-white/5 flex items-center justify-center hover:bg-secondary hover:text-white transition-all duration-300 border border-white/10" href="https://www.tiktok.com/@resiliencymbmedicine" rel="noopener" target="_blank">
+      <svg class="w-5 h-5" fill="currentColor" viewbox="0 0 24 24">
+       <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.34 6.34 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.17 8.17 0 0 0 4.78 1.52V6.75a4.85 4.85 0 0 1-1.01-.06z">
+       </path>
+      </svg>
+     </a>
+    </div>
+   </div>
+   <!-- Column 2: Quick Links -->
+   <div>
+    <h4 class="text-white font-bold mb-8 tracking-wider uppercase text-xs">
+     Clinic
+    </h4>
+    <ul class="space-y-4 text-sm">
+     <li>
+      <a class="hover:text-lightblue transition-colors flex items-center gap-2" href="about">
+       About Our Clinic
+      </a>
+     </li>
+     <li>
+      <a class="hover:text-lightblue transition-colors flex items-center gap-2" href="team">
+       Meet Our Providers
+      </a>
+     </li>
+     <li>
+      <a class="hover:text-lightblue transition-colors flex items-center gap-2" href="tms-therapy">
+       Deep TMS Therapy
+      </a>
+     </li>
+     <li>
+      <a class="hover:text-lightblue transition-colors flex items-center gap-2" href="spravato-therapy">
+       Spravato Treatment
+      </a>
+     </li>
+     <li>
+      <a class="hover:text-lightblue transition-colors flex items-center gap-2" href="blog">
+       Clinic Blog
+      </a>
+     </li>
+    </ul>
+   </div>
+   <!-- Column 3: Resources -->
+   <div>
+    <h4 class="text-white font-bold mb-8 tracking-wider uppercase text-xs">
+     Resources
+    </h4>
+    <ul class="space-y-4 text-sm">
+     <li>
+      <a class="hover:text-lightblue transition-colors" href="https://resiliencymbm.intakeq.com/portal" rel="noopener" target="_blank">
+       Patient Portal
+      </a>
+     </li>
+     <li>
+      <a class="hover:text-lightblue transition-colors" href="new-patient-form">
+       New Patient Forms
+      </a>
+     </li>
+     <li>
+      <a class="hover:text-lightblue transition-colors" href="insurance">
+       Insurance &amp; Fees
+      </a>
+     </li>
+     <li>
+      <a class="hover:text-lightblue transition-colors" href="contact">
+       Contact Us
+      </a>
+     </li>
+     <li>
+      <a class="hover:text-lightblue transition-colors" href="faqs">
+       Frequently Asked Questions
+      </a>
+     </li>
+    </ul>
+   </div>
+   <!-- Column 4: Conditions -->
+   <div class="lg:col-span-2">
+    <h4 class="text-white font-bold mb-8 tracking-wider uppercase text-xs">
+     Conditions We Treat
+    </h4>
+    <ul class="grid grid-cols-2 gap-x-6 gap-y-4 text-sm">
+     <li>
+      <a class="hover:text-lightblue transition-colors" href="depression">
+       Depression
+      </a>
+     </li>
+     <li>
+      <a class="hover:text-lightblue transition-colors" href="anxiety">
+       Anxiety
+      </a>
+     </li>
+     <li>
+      <a class="hover:text-lightblue transition-colors" href="ocd">
+       OCD
+      </a>
+     </li>
+     <li>
+      <a class="hover:text-lightblue transition-colors" href="ptsd">
+       PTSD
+      </a>
+     </li>
+     <li>
+      <a class="hover:text-lightblue transition-colors" href="adhd">
+       ADHD
+      </a>
+     </li>
+     <li>
+      <a class="hover:text-lightblue transition-colors" href="bipolar">
+       Bipolar Disorder
+      </a>
+     </li>
+     <li>
+      <a class="hover:text-lightblue transition-colors" href="weight-loss">
+       Weight Loss
+      </a>
+     </li>
+     <li>
+      <a class="hover:text-lightblue transition-colors" href="suicidal-ideation">
+       Suicidal Ideation
+      </a>
+     </li>
+    </ul>
+   </div>
+  </div>
+  <!-- Contact Strip -->
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-8 py-10 border-t border-b border-white/5 mb-12">
+   <div class="flex items-center gap-4">
+    <div class="w-10 h-10 flex-shrink-0 rounded-full bg-secondary/10 flex items-center justify-center text-secondary">
+     <i class="w-5 h-5" data-lucide="phone">
+     </i>
+    </div>
+    <div>
+     <p class="text-[10px] uppercase tracking-widest text-gray-500 font-bold">
+      Call Us
+     </p>
+     <a class="text-white font-medium text-sm hover:text-secondary transition-colors" href="tel:+19499965355">
+      (949) 996-5355
+     </a>
+    </div>
+   </div>
+   <div class="flex items-start gap-4">
+    <div class="w-10 h-10 flex-shrink-0 rounded-full bg-secondary/10 flex items-center justify-center text-secondary mt-0.5">
+     <i class="w-5 h-5" data-lucide="map-pin">
+     </i>
+    </div>
+    <div>
+     <a class="text-[10px] uppercase tracking-widest text-gray-500 font-bold mb-1 hover:text-secondary transition-colors block" href="newport-beach">
+      Newport Beach
+     </a>
+     <a class="text-white font-medium text-sm hover:text-secondary transition-colors leading-snug block" href="newport-beach">
+      1501 Superior Ave STE 210,
+      <br/>
+      Newport Beach, CA 92663
+     </a>
+    </div>
+   </div>
+   <div class="flex items-start gap-4">
+    <div class="w-10 h-10 flex-shrink-0 rounded-full bg-secondary/10 flex items-center justify-center text-secondary mt-0.5">
+     <i class="w-5 h-5" data-lucide="map-pin">
+     </i>
+    </div>
+    <div>
+     <a class="text-[10px] uppercase tracking-widest text-gray-500 font-bold mb-1 hover:text-secondary transition-colors block" href="san-juan-capistrano">
+      San Juan Capistrano
+     </a>
+     <a class="text-white font-medium text-sm hover:text-secondary transition-colors leading-snug block" href="san-juan-capistrano">
+      27184 Ortega Hwy, STE 103,
+      <br/>
+      San Juan Capistrano, CA 92675
+     </a>
+    </div>
+   </div>
+  </div>
+  <!-- Verification Badges -->
+  <div class="flex flex-wrap items-center gap-6 justify-center mb-10 py-6 border-t border-b border-white/5">
+   <!-- Psychology Today Verified -->
+   <a class="sx-verified-seal" href="https://www.psychologytoday.com/profile/1615083">
+   </a>
+   <script data-badge="14" data-code="aHR0cHM6Ly93d3cucHN5Y2hvbG9neXRvZGF5LmNvbS9hcGkvdmVyaWZpZWQtc2VhbC9zZWFscy8xNC9wcm9maWxlLzE2MTUwODM/Y2FsbGJhY2s9c3hjYWxsYmFjaw==" data-id="1615083" src="https://member.psychologytoday.com/verified-seal.js" type="text/javascript">
+   </script>
+   <!-- Solstice Training Institute Badge -->
+   <a href="https://solsticetraining.org" rel="noopener noreferrer" target="_blank">
+    <img alt="Solstice Training Institute Certified Instructor Badge" src="https://ladybug-impala-xln8.squarespace.com/s/Badge-Instructor.png" style="max-width: 180px; width: 100%; height: auto;"/>
+   </a>
+   <!-- LegitScript Verified -->
+   <script src="https://static.legitscript.com/seals/18505104.js">
+   </script>
+  </div>
+  <div class="flex flex-col md:flex-row justify-between items-center text-xs font-light text-gray-500">
+   <p>
+    © 2026 Resiliency Mind + Body Medicine┬«. All rights reserved.
+   </p>
+   <div class="flex gap-8 mt-4 md:mt-0 uppercase tracking-widest">
+    <a class="hover:text-white transition-colors" href="privacy-policy">
+     Privacy Policy
+    </a>
+    <a class="hover:text-white transition-colors" href="terms-of-service">
+     Terms of Service
+    </a>
+    <a class="hover:text-white transition-colors" href="acceptable-use">
+     Accessibility
+    </a>
+   </div>
+  </div>
+ </div>
+</footer>

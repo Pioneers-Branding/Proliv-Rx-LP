@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proliv™Rx At-Home TMS | Resiliency Mind + Body Medicine®</title>
+    <meta name="description"
+        content="FDA-approved at-home brain neuromodulation in Newport Beach & San Juan Capistrano, CA. Proliv™Rx prescribed and supervised by our board-certified psychiatrists.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="shortcut icon" href="img/logo.png" type="image/png">
+
+    <!-- Icons (Lucide) -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: { DEFAULT: '#0B2035', light: '#132d4a', card: '#0f2740' },
+                        cyan: { DEFAULT: '#23bfe2', light: 'rgba(35,191,226,0.12)', hover: '#1da8c8' },
+                        surface: '#FDFDFD',
+                        neutral: '#F3F4F6'
+                    },
+                    fontFamily: {
+                        heading: ['Montserrat', 'sans-serif'],
+                        body: ['Inter', 'sans-serif'],
+                    },
+                    boxShadow: {
+                        'soft': '0 10px 40px -10px rgba(11,32,53,0.08)',
+                        'hover': '0 20px 40px -10px rgba(11,32,53,0.12)',
+                        'glow': '0 0 20px rgba(35,191,226,0.3)',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="font-body text-slate-600 bg-surface antialiased selection:bg-cyan selection:text-white overflow-x-hidden">
+
+    <!-- HEADER -->
+    <header id="header" class="fixed w-full top-0 z-50 transition-all duration-300 py-4">
+        <div class="max-w-7xl mx-auto px-6 flex items-center justify-between">
+            <a href="#" class="flex items-center">
+                <img src="img/logo.png" alt="Resiliency Mind+Body Medicine" class="h-16 md:h-16 w-auto">
+            </a>
+
+            <nav class="hidden lg:flex items-center gap-8">
+                <a href="#about" class="nav-link text-white text-sm font-medium hover:text-cyan transition-colors">What
+                    is Proliv™Rx</a>
+                <a href="#how-it-works"
+                    class="nav-link text-white text-sm font-medium hover:text-cyan transition-colors">The Science</a>
+                <a href="#evidence"
+                    class="nav-link text-white text-sm font-medium hover:text-cyan transition-colors">Clinical
+                    Evidence</a>
+                <a href="#candidacy"
+                    class="nav-link text-white text-sm font-medium hover:text-cyan transition-colors">Candidacy</a>
+                <a href="#faq" class="nav-link text-white text-sm font-medium hover:text-cyan transition-colors">FAQ</a>
+            </nav>
+
+            <div class="hidden lg:flex items-center gap-5">
+                <a href="tel:+19499965355"
+                    class="flex items-center gap-2 text-white text-sm font-medium transition-colors phone-link">
+                    <i data-lucide="phone" class="w-4 h-4 text-cyan"></i> (949) 996-5355
+                </a>
+                <a href="#contact"
+                    class="px-5 py-2.5 bg-cyan text-navy rounded-full text-sm font-semibold hover:bg-cyan-hover hover:shadow-glow transition-all">Book
+                    Consultation</a>
+            </div>
+
+            <button id="mobileToggle" class="lg:hidden flex flex-col gap-1.5 p-1 z-[60]">
+                <span class="block w-6 h-0.5 bg-white transition-transform origin-center"></span>
+                <span class="block w-6 h-0.5 bg-white transition-opacity"></span>
+                <span class="block w-6 h-0.5 bg-white transition-transform origin-center"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- MOBILE NAV -->
+    <div id="mobileNav"
+        class="fixed inset-0 bg-navy/95 backdrop-blur-xl z-[55] flex flex-col items-center justify-center gap-8 opacity-0 pointer-events-none transition-all duration-300">
+        <button id="mobileClose"
+            class="absolute top-6 right-6 text-white p-2 hover:text-cyan transition-colors z-[60]">
+            <i data-lucide="x" class="w-8 h-8"></i>
+        </button>
+        <a href="#about" class="text-white text-2xl font-heading font-semibold hover:text-cyan mobile-link">What is
+            Proliv™Rx</a>
+        <a href="#how-it-works" class="text-white text-2xl font-heading font-semibold hover:text-cyan mobile-link">The
+            Science</a>
+        <a href="#evidence" class="text-white text-2xl font-heading font-semibold hover:text-cyan mobile-link">Clinical
+            Evidence</a>
+        <a href="#candidacy"
+            class="text-white text-2xl font-heading font-semibold hover:text-cyan mobile-link">Candidacy</a>
+        <a href="#faq" class="text-white text-2xl font-heading font-semibold hover:text-cyan mobile-link">FAQ</a>
+        <a href="#contact" class="px-8 py-3 mt-4 bg-cyan text-navy rounded-full font-bold text-lg mobile-link">Book
+            Consultation</a>
+    </div>
+
+    <!-- HERO SECTION -->
+    <section class="relative min-h-[90vh] flex items-center overflow-hidden pt-20">
+        <div class="absolute inset-0">
+            <!-- Background Image Placeholder -->
+            <img src="img/proliv_image.jpeg" alt="Relaxing at-home environment"
+                class="w-full h-full object-cover object-center scale-105 zoom-bg">
+            <div class="absolute inset-0 bg-gradient-to-r from-navy/90 via-navy/70 to-navy/40"></div>
+        </div>
+
+        <div class="relative z-10 max-w-7xl mx-auto px-6 py-12 w-full">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                <!-- Left: Text content -->
+                <div class="lg:col-span-7">
+                    <div class="flex items-center gap-3 mb-6 animate-fade-in-up" style="animation-delay: 0.1s;">
+                        <div class="w-12 h-0.5 bg-cyan"></div>
+                        <span class="text-cyan text-xs font-bold tracking-[0.2em] uppercase">FDA-Approved At-Home
+                            Therapy</span>
+                    </div>
+
+                    <h1 class="font-heading text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6 animate-fade-in-up"
+                        style="animation-delay: 0.2s;">
+                        Proliv™Rx <br><span class="text-cyan italic font-normal">Neuromodulation</span>
+                    </h1>
+
+                    <p class="text-white/80 text-lg md:text-xl leading-relaxed mb-8 max-w-xl animate-fade-in-up"
+                        style="animation-delay: 0.3s;">
+                        The first FDA-approved, prescription, at-home brain neuromodulation therapy for adults with
+                        major depressive disorder who haven't adequately responded to antidepressants.
+                    </p>
+
+                    <div class="glass-panel inline-flex items-start gap-4 px-6 py-5 rounded-2xl mb-10 max-w-xl animate-fade-in-up"
+                        style="animation-delay: 0.4s;">
+                        <div
+                            class="w-12 h-12 rounded-full bg-cyan flex-shrink-0 flex items-center justify-center text-navy shadow-glow">
+                            <i data-lucide="home" class="w-6 h-6"></i>
+                        </div>
+                        <div>
+                            <p class="text-white font-heading font-bold text-base leading-tight mb-1">Clinician-Directed
+                                Care at Home</p>
+                            <p class="text-white/75 text-sm leading-relaxed">Experience rapid relief with wearable
+                                technology, fully supervised by our board-certified psychiatrists.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-wrap gap-4 animate-fade-in-up" style="animation-delay: 0.5s;">
+                        <a href="#about"
+                            class="px-8 py-3.5 bg-transparent border-2 border-white/30 text-white rounded-full font-heading font-semibold hover:border-cyan hover:text-cyan transition-all">Learn
+                            More ↓</a>
+                    </div>
+                </div>
+
+                <!-- Right: Form -->
+                <div class="lg:col-span-5 animate-fade-in-up" style="animation-delay: 0.6s;">
+                    <div class="glass-form p-8 rounded-3xl relative overflow-hidden">
+                        <div class="absolute top-0 left-0 w-full h-1 bg-cyan"></div>
+                        <h3 class="text-2xl font-heading font-bold text-white mb-2">Check Your Candidacy</h3>
+                        <p class="text-white/70 text-sm mb-6">See if Proliv™Rx is right for you. Fill out the form below
+                            and our clinical team will contact you.</p>
+
+                        <!-- Placeholder for GoHighLevel / LeadConnector form -->
+                        <form class="space-y-4">
+                            <div>
+                                <input type="text" placeholder="Full Name"
+                                    class="w-full bg-white/10 border border-white/20 rounded-xl px-4 py-3 text-white placeholder-white/50 focus:outline-none focus:border-cyan transition-colors">
+                            </div>
+                            <div>
+                                <input type="email" placeholder="Email Address"
+                                    class="w-full bg-white/10 border border-white/20 rounded-xl px-4 py-3 text-white placeholder-white/50 focus:outline-none focus:border-cyan transition-colors">
+                            </div>
+                            <div>
+                                <input type="tel" placeholder="Phone Number"
+                                    class="w-full bg-white/10 border border-white/20 rounded-xl px-4 py-3 text-white placeholder-white/50 focus:outline-none focus:border-cyan transition-colors">
+                            </div>
+                            <button type="button"
+                                class="w-full bg-cyan text-navy font-bold py-3.5 rounded-xl hover:bg-cyan-hover hover:shadow-glow transition-all mt-4">
+                                Request Consultation
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- THE CHALLENGE -->
+    <section class="py-24 bg-white reveal" id="about">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16 max-w-3xl mx-auto">
+                <div class="flex items-center justify-center gap-3 mb-4">
+                    <div class="w-8 h-0.5 bg-cyan"></div>
+                    <span class="text-cyan text-xs font-bold tracking-[0.2em] uppercase">The Challenge</span>
+                    <div class="w-8 h-0.5 bg-cyan"></div>
+                </div>
+                <h2 class="font-heading text-3xl md:text-4xl font-bold text-navy mb-6">When Antidepressants <span
+                        class="text-cyan">Aren't Enough</span></h2>
+                <p class="text-lg text-slate-600 leading-relaxed">
+                    Antidepressants are a foundational depression treatment, yet many patients don't achieve sufficient
+                    improvement. Effective interventional therapies have been limited by geographic constraints and
+                    clinic capacity—until now.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-neutral p-8 rounded-3xl hover:-translate-y-2 transition-transform duration-300">
+                    <h3 class="text-4xl font-heading font-black text-navy mb-2">#1</h3>
+                    <p class="text-sm font-medium text-slate-600">Leading cause of disability globally</p>
+                </div>
+                <div class="bg-neutral p-8 rounded-3xl hover:-translate-y-2 transition-transform duration-300">
+                    <h3 class="text-4xl font-heading font-black text-navy mb-2">700K+</h3>
+                    <p class="text-sm font-medium text-slate-600">Annual suicide deaths worldwide</p>
+                </div>
+                <div class="bg-neutral p-8 rounded-3xl hover:-translate-y-2 transition-transform duration-300">
+                    <h3 class="text-4xl font-heading font-black text-cyan mb-2">30%+</h3>
+                    <p class="text-sm font-medium text-slate-600">Show treatment resistance to antidepressants</p>
+                </div>
+                <div class="bg-neutral p-8 rounded-3xl hover:-translate-y-2 transition-transform duration-300">
+                    <h3 class="text-4xl font-heading font-black text-navy mb-2">5%</h3>
+                    <p class="text-sm font-medium text-slate-600">Of US adults experience major depression</p>
+                </div>
+                <div class="bg-neutral p-8 rounded-3xl hover:-translate-y-2 transition-transform duration-300">
+                    <h3 class="text-4xl font-heading font-black text-cyan mb-2">$71B</h3>
+                    <p class="text-sm font-medium text-slate-600">Annual economic burden in the US</p>
+                </div>
+                <div class="bg-neutral p-8 rounded-3xl hover:-translate-y-2 transition-transform duration-300">
+                    <h3 class="text-4xl font-heading font-black text-cyan mb-2">1st</h3>
+                    <p class="text-sm font-medium text-slate-600">FDA-approved home therapy of its kind</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- THE SCIENCE -->
+    <section class="py-24 bg-navy relative overflow-hidden reveal" id="how-it-works">
+        <!-- Abstract background elements -->
+        <div
+            class="absolute top-0 right-0 w-[800px] h-[800px] bg-cyan/5 rounded-full blur-[100px] -translate-y-1/2 translate-x-1/3">
+        </div>
+        <div
+            class="absolute bottom-0 left-0 w-[600px] h-[600px] bg-cyan/5 rounded-full blur-[100px] translate-y-1/3 -translate-x-1/4">
+        </div>
+
+        <div class="max-w-7xl mx-auto px-6 relative z-10">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div>
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-12 h-0.5 bg-cyan"></div>
+                        <span class="text-cyan text-xs font-bold tracking-[0.2em] uppercase">The Science</span>
+                    </div>
+                    <h2 class="font-heading text-3xl md:text-4xl font-bold text-white mb-6">How Proliv™Rx <span
+                            class="text-cyan italic font-normal">Works</span></h2>
+
+                    <p class="text-white/80 text-lg leading-relaxed mb-8">
+                        Proliv™Rx uses a non-invasive wearable headset with integrated electrodes that contact the
+                        scalp, delivering Combined Occipital and Trigeminal Afferent Stimulation (eCOT-AS).
+                    </p>
+
+                    <div class="space-y-6">
+                        <div class="flex gap-4 items-start">
+                            <div
+                                class="w-10 h-10 rounded-xl bg-cyan/20 flex items-center justify-center flex-shrink-0 border border-cyan/30">
+                                <span class="text-cyan font-bold font-heading">1</span>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-bold text-lg mb-1">Targeted Stimulation</h4>
+                                <p class="text-white/60 text-sm">Forehead electrodes stimulate trigeminal nerve
+                                    branches; rear electrodes target occipital nerve branches.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4 items-start">
+                            <div
+                                class="w-10 h-10 rounded-xl bg-cyan/20 flex items-center justify-center flex-shrink-0 border border-cyan/30">
+                                <span class="text-cyan font-bold font-heading">2</span>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-bold text-lg mb-1">Neural Pathways</h4>
+                                <p class="text-white/60 text-sm">Gentle electrical pulses travel through sensory nerves
+                                    to the brainstem, into thalamo-cortical and limbic networks.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4 items-start">
+                            <div
+                                class="w-10 h-10 rounded-xl bg-cyan/20 flex items-center justify-center flex-shrink-0 border border-cyan/30">
+                                <span class="text-cyan font-bold font-heading">3</span>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-bold text-lg mb-1">Mood Regulation</h4>
+                                <p class="text-white/60 text-sm">Signals modulate brain regions involved in mood,
+                                    arousal, and autonomic regulation to alleviate depression.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative">
+                    <img src="img/proliv_image.jpeg" alt="Medical Science Concept"
+                        class="rounded-3xl shadow-2xl relative z-10 w-full h-[500px] object-cover">
+                    <!-- Decorative border -->
+                    <div class="absolute inset-0 border-2 border-cyan rounded-3xl translate-x-4 translate-y-4 -z-0">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CLINICAL EVIDENCE (THE MOOD STUDY) -->
+    <section class="py-24 bg-neutral reveal" id="evidence">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16 max-w-3xl mx-auto">
+                <div class="flex items-center justify-center gap-3 mb-4">
+                    <div class="w-8 h-0.5 bg-cyan"></div>
+                    <span class="text-cyan text-xs font-bold tracking-[0.2em] uppercase">Clinical Evidence</span>
+                    <div class="w-8 h-0.5 bg-cyan"></div>
+                </div>
+                <h2 class="font-heading text-3xl md:text-4xl font-bold text-navy mb-6">The MOOD <span
+                        class="text-cyan">Study</span></h2>
+                <p class="text-lg text-slate-600 leading-relaxed">
+                    A multicenter, randomized, double-blind, sham-controlled trial evaluating Proliv™Rx over 16 weeks of
+                    home-based self-administration under physician supervision. Results demonstrated significant
+                    improvement in depression severity, with 81% of patients classified as severe at baseline reduced to
+                    just 15% by week 16.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-10 rounded-[2rem] shadow-soft text-center hover:shadow-hover transition-shadow">
+                    <div class="w-16 h-16 bg-cyan/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i data-lucide="trending-down" class="w-8 h-8 text-cyan"></i>
+                    </div>
+                    <h3 class="text-4xl font-heading font-bold text-navy mb-3">10.15</h3>
+                    <p class="text-sm font-bold uppercase tracking-wider text-cyan mb-2">Point Reduction</p>
+                    <p class="text-slate-500 text-sm">On the Hamilton Depression Rating Scale (HDRS-17) in the active
+                        treatment group.</p>
+                </div>
+
+                <div
+                    class="bg-navy p-10 rounded-[2rem] shadow-glow text-center relative overflow-hidden transform md:-translate-y-4">
+                    <div class="absolute top-0 left-0 w-full h-1 bg-cyan"></div>
+                    <div class="w-16 h-16 bg-white/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i data-lucide="sun" class="w-8 h-8 text-cyan"></i>
+                    </div>
+                    <h3 class="text-4xl font-heading font-bold text-white mb-3">32%</h3>
+                    <p class="text-sm font-bold uppercase tracking-wider text-cyan mb-2">Full Remission</p>
+                    <p class="text-white/70 text-sm">Of initially severe patients who failed antidepressants reached
+                        full remission.</p>
+                </div>
+
+                <div class="bg-white p-10 rounded-[2rem] shadow-soft text-center hover:shadow-hover transition-shadow">
+                    <div class="w-16 h-16 bg-cyan/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i data-lucide="smile" class="w-8 h-8 text-cyan"></i>
+                    </div>
+                    <h3 class="text-4xl font-heading font-bold text-navy mb-3">56%</h3>
+                    <p class="text-sm font-bold uppercase tracking-wider text-cyan mb-2">Depression-Free</p>
+                    <p class="text-slate-500 text-sm">At 16 weeks—compared to 0% at baseline. From 81% severe at
+                        baseline to just 15%.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- YOUR JOURNEY -->
+    <section class="py-24 bg-white reveal">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div class="order-2 lg:order-1 relative">
+                    <img src="https://resiliencymbmedicine.com/assets/images/team/stefani.png" alt="At Home Wellness"
+                        class="rounded-3xl shadow-soft w-full h-[600px] object-cover">
+                    <div
+                        class="absolute -bottom-10 -right-10 bg-white p-6 rounded-2xl shadow-xl max-w-xs border border-gray-100 hidden md:block">
+                        <div class="flex gap-4 items-center">
+                            <div class="w-12 h-12 bg-cyan/10 rounded-full flex items-center justify-center">
+                                <i data-lucide="smartphone" class="w-6 h-6 text-cyan"></i>
+                            </div>
+                            <div>
+                                <p class="font-bold text-navy">App-Guided</p>
+                                <p class="text-xs text-slate-500">Track progress easily</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="order-1 lg:order-2">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-12 h-0.5 bg-cyan"></div>
+                        <span class="text-cyan text-xs font-bold tracking-[0.2em] uppercase">Your Journey</span>
+                    </div>
+                    <h2 class="font-heading text-3xl md:text-4xl font-bold text-navy mb-6">Clinician-Directed Care <span
+                            class="text-cyan">at Home</span></h2>
+
+                    <p class="text-lg text-slate-600 leading-relaxed mb-8">
+                        Proliv™Rx shifts treatment from the clinic to your home while preserving full physician
+                        oversight from the experts at Resiliency Mind+Body Medicine.
+                    </p>
+
+                    <ul class="space-y-6">
+                        <li class="flex gap-4">
+                            <i data-lucide="check-circle-2" class="w-6 h-6 text-cyan flex-shrink-0 mt-1"></i>
+                            <div>
+                                <p class="font-bold text-navy mb-1">1. Evaluation & Prescription</p>
+                                <p class="text-sm text-slate-600">Your physician evaluates your history. The device is
+                                    then delivered directly to your home.</p>
+                            </div>
+                        </li>
+                        <li class="flex gap-4">
+                            <i data-lucide="check-circle-2" class="w-6 h-6 text-cyan flex-shrink-0 mt-1"></i>
+                            <div>
+                                <p class="font-bold text-navy mb-1">2. Wearable Treatment</p>
+                                <p class="text-sm text-slate-600">Wear the headset and follow app-based guidance.
+                                    Treatment is comfortable and non-invasive.</p>
+                            </div>
+                        </li>
+                        <li class="flex gap-4">
+                            <i data-lucide="check-circle-2" class="w-6 h-6 text-cyan flex-shrink-0 mt-1"></i>
+                            <div>
+                                <p class="font-bold text-navy mb-1">3. Track & Support</p>
+                                <p class="text-sm text-slate-600">The companion app supports adherence, correct usage,
+                                    and symptom tracking.</p>
+                            </div>
+                        </li>
+                        <li class="flex gap-4">
+                            <i data-lucide="check-circle-2" class="w-6 h-6 text-cyan flex-shrink-0 mt-1"></i>
+                            <div>
+                                <p class="font-bold text-navy mb-1">4. Ongoing Supervision</p>
+                                <p class="text-sm text-slate-600">You remain under our clinical supervision for
+                                    monitoring and dose adjustments.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS (What Our Patients Say) -->
+    <section class="py-24 bg-navy relative overflow-hidden reveal" id="testimonials">
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,#23bfe2,transparent_60%)]"></div>
+        </div>
+        <div class="max-w-7xl mx-auto px-6 relative z-10">
+            <div class="text-center mb-16 max-w-3xl mx-auto">
+                <div class="flex items-center justify-center gap-3 mb-4">
+                    <div class="w-8 h-0.5 bg-cyan"></div>
+                    <span class="text-cyan text-xs font-bold tracking-[0.2em] uppercase">Testimonials</span>
+                    <div class="w-8 h-0.5 bg-cyan"></div>
+                </div>
+                <h2 class="font-heading text-3xl md:text-4xl font-bold text-white mb-6">What Our <span
+                        class="text-cyan italic font-normal">Patients Say</span></h2>
+                <p class="text-lg text-white/70 leading-relaxed">
+                    Hear from individuals who have reclaimed their lives through our advanced neuromodulation therapies.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-6">
+                <!-- Testimonial 1 -->
+                <div class="glass-form p-8 rounded-3xl relative">
+                    <i data-lucide="quote" class="w-10 h-10 text-cyan/30 absolute top-6 right-6"></i>
+                    <div class="flex items-center gap-1 mb-6">
+                        <i data-lucide="star" class="w-5 h-5 fill-cyan text-cyan"></i>
+                        <i data-lucide="star" class="w-5 h-5 fill-cyan text-cyan"></i>
+                        <i data-lucide="star" class="w-5 h-5 fill-cyan text-cyan"></i>
+                        <i data-lucide="star" class="w-5 h-5 fill-cyan text-cyan"></i>
+                        <i data-lucide="star" class="w-5 h-5 fill-cyan text-cyan"></i>
+                    </div>
+                    <p class="text-white/80 leading-relaxed mb-6 italic">"The ability to receive this level of care from
+                        the comfort of my own home has been life-changing. Dr. LaFrenierre and her team were supportive
+                        every step of the way."</p>
+                    <div>
+                        <p class="font-heading font-bold text-white">Sarah M.</p>
+                        <p class="text-cyan text-sm">Patient</p>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="glass-form p-8 rounded-3xl relative transform md:-translate-y-4">
+                    <i data-lucide="quote" class="w-10 h-10 text-cyan/30 absolute top-6 right-6"></i>
+                    <div class="flex items-center gap-1 mb-6">
+                        <i data-lucide="star" class="w-5 h-5 fill-cyan text-cyan"></i>
+                        <i data-lucide="star" class="w-5 h-5 fill-cyan text-cyan"></i>
+                        <i data-lucide="star" class="w-5 h-5 fill-cyan text-cyan"></i>
+                        <i data-lucide="star" class="w-5 h-5 fill-cyan text-cyan"></i>
+                        <i data-lucide="star" class="w-5 h-5 fill-cyan text-cyan"></i>
+                    </div>
+                    <p class="text-white/80 leading-relaxed mb-6 italic">"After years of struggling with medications
+                        that didn't work, this therapy finally lifted the fog. The companion app made the process so
+                        easy to follow."</p>
+                    <div>
+                        <p class="font-heading font-bold text-white">James T.</p>
+                        <p class="text-cyan text-sm">Patient</p>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="glass-form p-8 rounded-3xl relative">
+                    <i data-lucide="quote" class="w-10 h-10 text-cyan/30 absolute top-6 right-6"></i>
+                    <div class="flex items-center gap-1 mb-6">
+                        <i data-lucide="star" class="w-5 h-5 fill-cyan text-cyan"></i>
+                        <i data-lucide="star" class="w-5 h-5 fill-cyan text-cyan"></i>
+                        <i data-lucide="star" class="w-5 h-5 fill-cyan text-cyan"></i>
+                        <i data-lucide="star" class="w-5 h-5 fill-cyan text-cyan"></i>
+                        <i data-lucide="star" class="w-5 h-5 fill-cyan text-cyan"></i>
+                    </div>
+                    <p class="text-white/80 leading-relaxed mb-6 italic">"Resiliency Mind+Body Medicine truly cares
+                        about finding what works. Having an at-home option that is actually FDA-approved gave me peace
+                        of mind."</p>
+                    <div>
+                        <p class="font-heading font-bold text-white">Elena R.</p>
+                        <p class="text-cyan text-sm">Patient</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- COMMON QUESTIONS (FAQ) -->
+    <section class="py-24 bg-white reveal" id="faq">
+        <div class="max-w-4xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <div class="flex items-center justify-center gap-3 mb-4">
+                    <div class="w-8 h-0.5 bg-cyan"></div>
+                    <span class="text-cyan text-xs font-bold tracking-[0.2em] uppercase">FAQ</span>
+                    <div class="w-8 h-0.5 bg-cyan"></div>
+                </div>
+                <h2 class="font-heading text-3xl md:text-4xl font-bold text-navy mb-6">Common <span
+                        class="text-cyan">Questions</span></h2>
+            </div>
+
+            <div class="space-y-4">
+                <!-- FAQ 1 -->
+                <div
+                    class="border border-gray-200 rounded-2xl overflow-hidden faq-item bg-surface hover:border-cyan/50 transition-colors">
+                    <button
+                        class="w-full px-6 py-5 text-left flex justify-between items-center focus:outline-none faq-btn cursor-pointer">
+                        <span class="font-bold text-navy pr-4">How is Proliv™Rx different from Deep TMS in the
+                            clinic?</span>
+                        <i data-lucide="plus"
+                            class="w-5 h-5 text-cyan flex-shrink-0 transition-transform duration-300 faq-icon"></i>
+                    </button>
+                    <div class="px-6 pb-5 text-slate-600 hidden faq-content text-sm leading-relaxed">
+                        Proliv™Rx is designed for home use, offering convenience for patients who cannot attend daily
+                        clinic sessions. In-clinic Deep TMS delivers more powerful stimulation and is proven over
+                        decades. Proliv™Rx is ideal as a supplement or for maintenance.
+                    </div>
+                </div>
+
+                <!-- FAQ 2 -->
+                <div
+                    class="border border-gray-200 rounded-2xl overflow-hidden faq-item bg-surface hover:border-cyan/50 transition-colors">
+                    <button
+                        class="w-full px-6 py-5 text-left flex justify-between items-center focus:outline-none faq-btn cursor-pointer">
+                        <span class="font-bold text-navy pr-4">Do I still take my antidepressant medication with
+                            Proliv™Rx?</span>
+                        <i data-lucide="plus"
+                            class="w-5 h-5 text-cyan flex-shrink-0 transition-transform duration-300 faq-icon"></i>
+                    </button>
+                    <div class="px-6 pb-5 text-slate-600 hidden faq-content text-sm leading-relaxed">
+                        Yes. Proliv™Rx is designed to be used alongside antidepressant medications. It is not a
+                        replacement for medication but an augmentation for patients who have had inadequate responses.
+                    </div>
+                </div>
+
+                <!-- FAQ 3 -->
+                <div
+                    class="border border-gray-200 rounded-2xl overflow-hidden faq-item bg-surface hover:border-cyan/50 transition-colors">
+                    <button
+                        class="w-full px-6 py-5 text-left flex justify-between items-center focus:outline-none faq-btn cursor-pointer">
+                        <span class="font-bold text-navy pr-4">What are the side effects of Proliv™Rx?</span>
+                        <i data-lucide="plus"
+                            class="w-5 h-5 text-cyan flex-shrink-0 transition-transform duration-300 faq-icon"></i>
+                    </button>
+                    <div class="px-6 pb-5 text-slate-600 hidden faq-content text-sm leading-relaxed">
+                        Side effects are generally mild and may include scalp tingling or discomfort at the treatment
+                        site. Serious side effects are rare. Our providers supervise all Proliv™Rx prescriptions.
+                    </div>
+                </div>
+
+                <!-- FAQ 4 -->
+                <div
+                    class="border border-gray-200 rounded-2xl overflow-hidden faq-item bg-surface hover:border-cyan/50 transition-colors">
+                    <button
+                        class="w-full px-6 py-5 text-left flex justify-between items-center focus:outline-none faq-btn cursor-pointer">
+                        <span class="font-bold text-navy pr-4">When will Proliv™Rx be available at your clinic?</span>
+                        <i data-lucide="plus"
+                            class="w-5 h-5 text-cyan flex-shrink-0 transition-transform duration-300 faq-icon"></i>
+                    </button>
+                    <div class="px-6 pb-5 text-slate-600 hidden faq-content text-sm leading-relaxed">
+                        Proliv™Rx availability is being rolled out progressively. Contact our Newport Beach or San Juan
+                        Capistrano clinic for current availability and to discuss whether you are a candidate.
+                    </div>
+                </div>
+
+                <!-- FAQ 5 -->
+                <div
+                    class="border border-gray-200 rounded-2xl overflow-hidden faq-item bg-surface hover:border-cyan/50 transition-colors">
+                    <button
+                        class="w-full px-6 py-5 text-left flex justify-between items-center focus:outline-none faq-btn cursor-pointer">
+                        <span class="font-bold text-navy pr-4">Is Proliv™Rx covered by insurance?</span>
+                        <i data-lucide="plus"
+                            class="w-5 h-5 text-cyan flex-shrink-0 transition-transform duration-300 faq-icon"></i>
+                    </button>
+                    <div class="px-6 pb-5 text-slate-600 hidden faq-content text-sm leading-relaxed">
+                        Insurance coverage for Proliv™Rx is evolving as it is a newer therapy. Our team will check your
+                        benefits and help explore all coverage options.
+                    </div>
+                </div>
+
+                <!-- FAQ 6 -->
+                <div
+                    class="border border-gray-200 rounded-2xl overflow-hidden faq-item bg-surface hover:border-cyan/50 transition-colors">
+                    <button
+                        class="w-full px-6 py-5 text-left flex justify-between items-center focus:outline-none faq-btn cursor-pointer">
+                        <span class="font-bold text-navy pr-4">Who qualifies for Proliv™Rx?</span>
+                        <i data-lucide="plus"
+                            class="w-5 h-5 text-cyan flex-shrink-0 transition-transform duration-300 faq-icon"></i>
+                    </button>
+                    <div class="px-6 pb-5 text-slate-600 hidden faq-content text-sm leading-relaxed">
+                        Adults with major depressive disorder who have not responded adequately to antidepressant
+                        medication and are looking for a convenient at-home neuromodulation option under physician
+                        supervision.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER CTA -->
+    <section class="py-24 bg-gray-100 relative overflow-hidden" id="contact">
+        <div class="max-w-4xl mx-auto px-6 relative z-10 text-center">
+            <h2 class="font-heading text-4xl md:text-5xl font-bold text-navy mb-6">
+                Reclaim Your <span class="text-cyan italic">Life Today</span>
+            </h2>
+            <p class="text-slate-600 text-lg md:text-xl mb-12 max-w-2xl mx-auto leading-relaxed">
+                You don't have to put your life on hold to feel better. Discover if Proliv™Rx at-home brain
+                neuromodulation is the right path to your recovery.
+            </p>
+            <a href="tel:+19499965355"
+                class="inline-flex items-center gap-3 px-10 py-5 bg-navy text-white rounded-full font-heading font-bold text-lg hover:bg-navy/90 hover:-translate-y-1 transition-all shadow-lg">
+                Schedule Your Consultation <i data-lucide="arrow-up-right" class="w-5 h-5"></i>
+            </a>
+        </div>
+
+        <!-- Floating CTA Button -->
+        <a href="tel:+19499965355"
+            class="fixed bottom-8 right-8 w-16 h-16 bg-navy rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-all z-50 group">
+            <i data-lucide="calendar" class="w-7 h-7 text-white group-hover:scale-110 transition-transform"></i>
+        </a>
+    </section>
+
+    <footer class="bg-[#0b2035] pt-16 pb-8 relative border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-6">
+            <!-- Top Section: 4 Columns -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+                <!-- Col 1: Brand & Contact -->
+                <div class="space-y-6">
+                    <a href="/">
+                        <img src="img/logo.png" alt="Resiliency Mind+Body Medicine"
+                            class="h-16 w-auto brightness-0 invert opacity-90">
+                    </a>
+                    <p class="text-white/80 text-sm leading-relaxed pr-4 font-medium">
+                        A boutique clinical practice specializing in advanced neuro-psychiatric treatments and
+                        integrative wellness.
+                    </p>
+                    <div class="space-y-4 pt-2">
+                        <div>
+                            <p class="font-bold text-white text-xs tracking-wider uppercase mb-1">Call Us</p>
+                            <a href="tel:+19499965355"
+                                class="text-white/70 text-sm hover:text-cyan transition-colors">(949) 996-5355</a>
+                        </div>
+                        <div>
+                            <p class="font-bold text-white text-xs tracking-wider uppercase mb-1">Newport Beach</p>
+                            <p class="text-white/70 text-sm leading-relaxed">1501 Superior Ave STE 210,<br>Newport
+                                Beach, CA 92663</p>
+                        </div>
+                        <div>
+                            <p class="font-bold text-white text-xs tracking-wider uppercase mb-1">San Juan Capistrano
+                            </p>
+                            <p class="text-white/70 text-sm leading-relaxed">27184 Ortega Hwy, STE 103,<br>San Juan
+                                Capistrano, CA 92675</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Col 2: Clinic -->
+                <div>
+                    <h4 class="font-bold text-white text-xs tracking-wider uppercase mb-6">Clinic</h4>
+                    <ul class="space-y-4 text-sm">
+                        <li><a href="#" class="text-white/70 hover:text-cyan transition-colors">About Our Clinic</a>
+                        </li>
+                        <li><a href="#" class="text-white/70 hover:text-cyan transition-colors">Meet Our Providers</a>
+                        </li>
+                        <li><a href="#" class="text-white/70 hover:text-cyan transition-colors">Deep TMS Therapy</a>
+                        </li>
+                        <li><a href="#" class="text-white/70 hover:text-cyan transition-colors">Spravato Treatment</a>
+                        </li>
+                        <li><a href="#" class="text-white/70 hover:text-cyan transition-colors">Clinic Blog</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Resources -->
+                <div>
+                    <h4 class="font-bold text-white text-xs tracking-wider uppercase mb-6">Resources</h4>
+                    <ul class="space-y-4 text-sm">
+                        <li><a href="#" class="text-white/70 hover:text-cyan transition-colors">Patient Portal</a></li>
+                        <li><a href="#" class="text-white/70 hover:text-cyan transition-colors">New Patient Forms</a>
+                        </li>
+                        <li><a href="#" class="text-white/70 hover:text-cyan transition-colors">Insurance & Fees</a>
+                        </li>
+                        <li><a href="#" class="text-white/70 hover:text-cyan transition-colors">Contact Us</a></li>
+                        <li><a href="#" class="text-white/70 hover:text-cyan transition-colors">FAQs</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 4: Conditions We Treat -->
+                <div>
+                    <h4 class="font-bold text-white text-xs tracking-wider uppercase mb-6">Conditions We Treat</h4>
+                    <ul class="space-y-4 text-sm">
+                        <li><a href="#" class="text-white/70 hover:text-cyan transition-colors">Depression</a></li>
+                        <li><a href="#" class="text-white/70 hover:text-cyan transition-colors">Anxiety</a></li>
+                        <li><a href="#" class="text-white/70 hover:text-cyan transition-colors">OCD</a></li>
+                        <li><a href="#" class="text-white/70 hover:text-cyan transition-colors">PTSD</a></li>
+                        <li><a href="#" class="text-white/70 hover:text-cyan transition-colors">ADHD</a></li>
+                        <li><a href="#" class="text-white/70 hover:text-cyan transition-colors">Bipolar Disorder</a>
+                        </li>
+                        <li><a href="#" class="text-white/70 hover:text-cyan transition-colors">Suicidal Ideation</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Badges Section -->
+            <div class="py-10 border-t border-white/5 flex flex-wrap justify-center items-center gap-8 md:gap-16">
+                <!-- Psychology Today Verified -->
+                <a href="https://www.psychologytoday.com/profile/1615083" target="_blank">
+                    <div
+                        class="bg-white rounded-full px-4 py-2 flex items-center h-12 hover:shadow-glow transition-all">
+                        <img src="img/phsy.png" alt="Verified by Psychology Today" class="h-8 w-auto">
+                    </div>
+                </a>
+
+                <!-- LegitScript -->
+                <a href="https://solsticetraining.org/" target="_blank">
+                    <div class="flex items-center justify-center hover:scale-105 transition-transform duration-300">
+                        <img src="img/Badge-Instructor.png" alt="LegitScript Certified" class="w-auto"
+                            style="max-width: 180px;">
+                    </div>
+                </a>
+
+                <!-- Solstice Training -->
+                <a href="https://www.legitscript.com/websites/?checker_keywords=resiliencymbmedicine.com"
+                    target="_blank">
+                    <div class="flex items-center justify-center hover:scale-105 transition-transform duration-300">
+                        <img alt="Solstice Training Institute Certified Instructor Badge" src="img/18505104.png"
+                            class="h-28 w-auto" />
+                    </div>
+                </a>
+
+            </div>
+
+            <!-- Bottom Copyright -->
+            <div
+                class="mt-4 pt-6 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 text-xs font-medium text-white/50">
+                <p>© 2026 Resiliency Mind + Body Medicine. All rights reserved.</p>
+                <div class="flex gap-6">
+                    <a href="#" class="hover:text-cyan transition-colors">Privacy Policy</a>
+                    <a href="#" class="hover:text-cyan transition-colors">Terms of Service</a>
+                    <a href="#" class="hover:text-cyan transition-colors">Accessibility</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Init Icons -->
+    <script>
+        lucide.createIcons();
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>
